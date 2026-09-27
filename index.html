@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Ekskul SMK LETRIS PAMULANG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="title1">
+            <h2>Form Pendaftaran Ekskul</h2>
+        </div>
+
+        <div class="title2">
+            <h3>SMK LETRIS PAMULANG</h3>
+        </div>
+    </header>
+
+    <form>
+        <div class="form-name">
+            <label for="name">Nama Lengkap:</label>
+        </div>
+
+        <div class="form-input">
+            <input type="text" id="name" name="name" required placeholder="Masukkan Nama Siswa">
+        </div>
+
+        <div class="form-class">
+            <label for="class">Kelas:</label>
+        </div>
+
+        <div class="form-class1">
+            <input type="radio" id="x" name="class" value="x" required>
+            <label for="x">X</label>
+            <input type="radio" id="xi" name="class" value="xi" required>
+            <label for="xi">XI</label>
+            <input type="radio" id="xii" name="class" value="xii" required>
+            <label for="xii">XII</label>
+        </div>
+
+        <div class="form-ekskul">
+            <label for="ekskul">Pilih Ekskul:</label>
+        </div>
+
+        <div class="form-ekskul1">
+            <select name="ekskul1" id="ekskul2">
+                <option value="-- pilih jurusan --">- - pilih jurusan - -</option>
+                <option value="pplg">PPLG (Pengembangan Perangkat Lunak dan Gim)</option>
+                <option value="dkv">DKV (Desain Komunikasi Visual)</option>
+                <option value="mplb">MPLB (Manajemen Perkantoran dan Layanan Bisnis)</option>
+                <option value="tjkt">TJKT (Teknik Jaringan Komputer dan Telekomunikasi)</option>
+                <option value="akl">AKL (Akuntansi dan Keuangan Lembaga)</option>
+                <option value="bdp">BDP(Bisnis Daring dan Pemasaran)</option>
+            </select>
+        </div>
+
+        <div class="ekskul3">
+            <label for="ekskul4">Pilihan Ekstrakulikuler:</label>
+        </div>
+
+        <div class="pilih-ekskul">
+            <select name="plheks" id="plheks">
+                <option value="pilih">- - Pilih Ekstrakurikuler - -</option>
+                <option value="animasi">Animasi</option>
+                <option value="paskibra">Paskibra</option>
+                <option value="volly">Volly</option>
+                <option value="basket">Basket</option>
+                <option value="futsal">Futsal</option>
+                <option value="letsin">Letsin</option>
+                <option value="pmr">PMR</option>
+                <option value="dance-modern">Dance Modern</option>
+            </select>
+        </div>
+
+        <div class="btn">
+            <button onclick="tambahData()">Tambah</button>
+        </div>
+
+        <div class="data-siswa">
+            <h2>Data Pendaftaran Siswa</h2>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>Kelas</th>
+                    <th>Jurusan</th>
+                    <th>Ekskul</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="isiTabel">   </tbody>
+        </table>
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>
